@@ -1,0 +1,2 @@
+# Make neovim the default editor.
+export EDITOR="nvim"

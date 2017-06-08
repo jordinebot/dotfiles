@@ -1,0 +1,20 @@
+# Colorize basic ls
+alias ls="ls -G"
+
+# Preferred listing
+alias l="ls -lha -G"
+
+# List files in colorized long format with human readable sizes
+alias ll="ls -lh -G"
+
+# List only hidden files in colorized short format
+alias la="ls -d -G .?*"
+
+# List only hidden files in colorized long format
+alias lla="ls -lhd -G .?*"
+
+# Recursively delete `.DS_Store` files
+alias cleands="find . -type f -name '*.DS_Store' -ls -delete"
+
+# Delete `*~` files in current directory
+alias cleanbak="find . -type f -name '*~' -maxdepth 1 -ls -delete"
