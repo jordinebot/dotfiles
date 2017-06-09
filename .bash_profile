@@ -1,6 +1,5 @@
-PROJECT_DIR=/git
-
-for DOTFILE in `find ~/.dotfiles`
-do
-  [ -f “$DOTFILE” && "$DOTFILE" == ^. ] && source “$DOTFILE”
-done
+source .function
+source .exports
+source .path
+source .aliases
+source .prompt

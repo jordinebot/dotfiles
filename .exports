@@ -1,2 +1,5 @@
 # Make neovim the default editor.
 export EDITOR="nvim"
+
+# Golang path
+export GOPATH="/git/go"

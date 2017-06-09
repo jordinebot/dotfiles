@@ -1,4 +1,5 @@
 # Colorize basic ls
+export LSCOLORS='BxBxhxDxfxhxhxhxhxcxcx'
 alias ls="ls -G"
 
 # Preferred listing
@@ -12,6 +13,12 @@ alias la="ls -d -G .?*"
 
 # List only hidden files in colorized long format
 alias lla="ls -lhd -G .?*"
+
+# Always use neovim as editor
+alias v="nvim"
+alias vi="nvim"
+alias vim="nvim"
+alias neovim="nvim"
 
 # Recursively delete `.DS_Store` files
 alias cleands="find . -type f -name '*.DS_Store' -ls -delete"
