@@ -25,3 +25,12 @@ alias cleands="find . -type f -name '*.DS_Store' -ls -delete"
 
 # Delete `*~` files in current directory
 alias cleanbak="find . -type f -name '*~' -maxdepth 1 -ls -delete"
+
+# git
+alias gs="git status"
+alias gl="git log --all --decorate --oneline --graph"
+
+# YOUR DICTIONARY
+alias yd="cd /git/yourdictionary/"
+alias clear_cache="find /git/yourdictionary/app/cache -name \"*.html\" -type f -delete"
+alias list_cache="find /git/yourdictionary/app/cache -name \"*.html\" -type f"

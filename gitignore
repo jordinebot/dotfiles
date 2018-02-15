@@ -1,0 +1,15 @@
+# Vim files
+tags
+tags.lock
+tags.temp
+*~
+*.swp
+
+# Node.js
+node_modules
+
+# Other delicate files
+*.pem
+
+# YourDictionary.com
+app/web/images
