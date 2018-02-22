@@ -1,5 +1,7 @@
 # Make neovim the default editor.
-export EDITOR="nvim"
+export EDITOR=nvim
 
-# Golang path
-export GOPATH="/git/go"
+export CLICOLOR=1
+export KEYTIMEOUT=1
+export QUOTING_STYLE=literal
+export TERM=xterm-256color
