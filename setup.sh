@@ -13,10 +13,16 @@ then
     done
 
     source ${ZDOTDIR:-${HOME}}/.zlogin
+    chsh -s $(which zsh)
 else
     echo 'Skipping ZIM installation...'
 fi
 
-# ln -fs ~/dotfiles/bash_profile ~/.bash_profile
+# Link zsh config file
 ln -fs ~/dotfiles/zshrc ~/.zshrc
+#
+# Also link bash, because maybe I want/need to open a bash shell
+ln -fs ~/dotfiles/bash_profile ~/.bash_profile
+
+# Link the global .gitignore file
 ln -fs ~/dotfiles/gitignore ~/.gitignore

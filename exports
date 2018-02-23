@@ -2,6 +2,9 @@
 export EDITOR=nvim
 
 export CLICOLOR=1
+
+# Kill The Lag for vi mode (https://dougblack.io/words/zsh-vi-mode.html)
 export KEYTIMEOUT=1
+
 export QUOTING_STYLE=literal
 export TERM=xterm-256color
