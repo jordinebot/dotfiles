@@ -1,3 +1,6 @@
+# Mac Files
+.DS_Store
+
 # Vim files
 tags
 tags.lock
