@@ -1,3 +1,4 @@
+source ~/.profile
 # This file is meant to be linked in ~ like:
 # ln -s ~/dotfiles/bash_profile ~/.bash_profile
 

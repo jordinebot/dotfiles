@@ -20,6 +20,9 @@ alias vi="nvim"
 alias vim="nvim"
 alias neovim="nvim"
 
+# Copy SSH public key to clipboard
+alias copy_pubkey="pbcopy < ~/.ssh/id_rsa.pub"
+
 # Recursively delete `.DS_Store` files
 alias cleands="find . -type f -name '*.DS_Store' -ls -delete"
 
