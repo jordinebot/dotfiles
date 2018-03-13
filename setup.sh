@@ -24,5 +24,6 @@ ln -fs ~/dotfiles/zshrc ~/.zshrc
 # Also link bash, because maybe I want/need to open a bash shell
 ln -fs ~/dotfiles/bash_profile ~/.bash_profile
 
-# Link the global .gitignore file
+# Link global git files
 ln -fs ~/dotfiles/gitignore ~/.gitignore
+ln -fs ~/dotfiles/gitconfig ~/.gitconfig

@@ -1,0 +1,20 @@
+# This is Git's per-user configuration file.
+[user]
+	name = Jordi Nebot
+	email = jordi@lovetoknow.com
+[core]
+	excludesfile = ~/.gitignore
+[alias]
+    aa = add --all
+    bd = branch --delete
+    bm = branch --move
+    cb = checkout -b
+    cm = commit -m
+    co = checkout
+    di = diff
+    la = !git config --list | grep ^alias\\. | cut -c 7- | grep -Ei --color \"$1\" "#"
+    lg = log --all --decorate --oneline --graph
+    pu = push
+    st = status
+    un = reset --hard HEAD
+    us = reset
