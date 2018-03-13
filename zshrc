@@ -18,7 +18,8 @@ export ZIM_HOME=${ZDOTDIR:-${HOME}}/.zim
 
 # Customize prompt colors
 # prompt steeef [username_color] [hostname_color] [pwd_color] [branch_color]
-prompt steeef 166 136 64 61
+# prompt steeef 166 136 64 61
+prompt lean
 
 source ${ZDOTDIR:-${HOME}}/dotfiles/exports
 source ${ZDOTDIR:-${HOME}}/dotfiles/aliases
