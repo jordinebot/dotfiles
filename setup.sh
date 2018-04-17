@@ -18,6 +18,8 @@ else
     echo 'Skipping ZIM installation...'
 fi
 
+ln -fs ~/dotfiles/tmux.conf ~/.tmux.conf
+
 # Link zsh config file
 ln -fs ~/dotfiles/zshrc ~/.zshrc
 #
