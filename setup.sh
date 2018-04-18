@@ -18,6 +18,13 @@ else
     echo 'Skipping ZIM installation...'
 fi
 
+# TMUX
+if [ ! -d ~/.tmux/plugins/tpm ]
+then
+    git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+else
+    echo 'Skipping Tmux Plugin Manager installation...'
+fi
 ln -fs ~/dotfiles/tmux.conf ~/.tmux.conf
 
 # Link zsh config file
