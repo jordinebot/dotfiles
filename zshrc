@@ -30,3 +30,5 @@ bindkey -v
 ### SOME INTERESTING READS
 # https://dougblack.io/words/zsh-vi-mode.html
 
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
