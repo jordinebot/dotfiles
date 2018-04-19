@@ -31,6 +31,9 @@ ln -fs ~/dotfiles/tmux.conf ~/.tmux.conf
 git clone https://github.com/powerline/fonts.git --depth=1 /tmp/fonts
 /tmp/fonts/install.sh && rm -rf /tmp/fonts
 
+# Install custom tmux theme
+cp -f ~/dotfiles/tmux-themes/custom.tmuxtheme ~/.tmux/plugins/tmux-themepack/powerline/default/custom.tmuxtheme
+
 # Link zsh config file
 ln -fs ~/dotfiles/zshrc ~/.zshrc
 #
