@@ -27,6 +27,10 @@ else
 fi
 ln -fs ~/dotfiles/tmux.conf ~/.tmux.conf
 
+# Install Powerline modified fonts
+git clone https://github.com/powerline/fonts.git --depth=1 /tmp/fonts
+/tmp/fonts/install.sh && rm -rf /tmp/fonts
+
 # Link zsh config file
 ln -fs ~/dotfiles/zshrc ~/.zshrc
 #
