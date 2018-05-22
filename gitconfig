@@ -7,6 +7,7 @@
 [alias]
     aa = add --all
     bd = branch --delete
+    bD = branch -D
     bm = branch --move
     cb = checkout -b
     cm = commit -m
@@ -16,5 +17,6 @@
     lg = log --all --decorate --oneline --graph
     pu = push
     re = reset --hard HEAD
+    sp = stash push -m
     st = status
     un = reset
