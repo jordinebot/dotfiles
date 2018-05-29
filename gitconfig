@@ -27,6 +27,8 @@
     re = reset --hard HEAD
     # (Stash Push) Stash working directory changesd with custom message
     sp = stash push -m
+    # (Stash List) List the stashed changes stack
+    sl = stash list
     # (Show Files) List files touched in commit
     sf = diff-tree --name-only --no-commit-id -r
     # (STatus) Show the status of the working tree
