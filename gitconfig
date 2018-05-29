@@ -25,8 +25,10 @@
     lg = log --all --decorate --oneline --graph
     # (REset) Undo last commit
     re = reset --hard HEAD
-    # (Stash Push) Stash working directory changesd with custom message
-    sp = stash push -m
+    # (Stash pUsh) Stash working directory changes with custom message
+    su = stash push -m
+    # (Stash pOp) Apply and drop stash
+    so = stash pop
     # (Stash List) List the stashed changes stack
     sl = stash list
     # (Show Files) List files touched in commit
