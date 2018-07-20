@@ -31,5 +31,7 @@ bindkey -v
 ### SOME INTERESTING READS
 # https://dougblack.io/words/zsh-vi-mode.html
 
+# https://unix.stackexchange.com/questions/139082/zsh-set-term-screen-256color-in-tmux-but-xterm-256color-without-tmux
+[[ $TMUX != "" ]] && export TERM="screen-256color"
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
