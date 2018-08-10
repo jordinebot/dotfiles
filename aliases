@@ -30,8 +30,7 @@ alias cleands="find . -type f -name '*.DS_Store' -ls -delete"
 alias cleanbak="find . -type f -name '*~' -maxdepth 1 -ls -delete"
 
 # git
-alias gs="git status"
-alias gl="git log --all --decorate --oneline --graph"
+alias gf="cd /git"
 
 # YOUR DICTIONARY
 alias yd="cd /git/yourdictionary/"

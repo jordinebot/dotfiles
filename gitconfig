@@ -10,7 +10,7 @@
     # (Branch Delete) Delete local branch
     bd = branch --delete
     # (Branch Delete) Delete both local and remote branch
-    bD = branch -D
+    bdd = branch -D
     # (Branch Move) Rename current branch
     bm = branch --move
     # (Create Branch) Create a new branch and check it out
