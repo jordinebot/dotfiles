@@ -34,6 +34,7 @@ alias gf="cd /git"
 
 # YOUR DICTIONARY
 alias yd="cd /git/yourdictionary/"
+alias wf="cd /git/WordFinder/"
 alias clear_cache="find /git/yourdictionary/app/cache -name \"*.html\" -type f -delete"
 alias list_cache="find /git/yourdictionary/app/cache -name \"*.html\" -type f"
 
