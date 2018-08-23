@@ -33,6 +33,9 @@ alias cleanbak="find . -type f -name '*~' -maxdepth 1 -ls -delete"
 alias gs="git status"
 alias gl="git log --all --decorate --oneline --graph"
 
+# Fast edit /etc/hosts
+alias eh="sudo nvim /etc/hosts"
+
 # YOUR DICTIONARY
 alias yd="cd /git/yourdictionary/"
 alias wf="cd /git/WordFinder/"

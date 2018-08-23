@@ -9,8 +9,8 @@
     aa = add --all
     # (Branch Delete) Delete local branch
     bd = branch --delete
-    # (Branch Delete) Delete both local and remote branch
-    bD = branch -D
+    # (Branch Delete -D) Delete both local and remote branch
+    bdd = branch -D
     # (Branch Move) Rename current branch
     bm = branch --move
     # (Commit Ammend) Ammend last commit
