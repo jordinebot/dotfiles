@@ -9,8 +9,10 @@
     aa = add --all
     # (Branch Delete) Delete local branch
     bd = branch --delete
-    # (Branch Delete -D) Delete both local and remote branch
-    bdd = branch -D
+    # (Branch Delete --Force) Delete local branch whatever its merged status is
+    bdf = branch -D
+    # (Branch Delete Remote) Removes the remote branch (assumes remote name is origin!)
+    bdr = push origin --delete
     # (Branch Move) Rename current branch
     bm = branch --move
     # (Commit Ammend) Ammend last commit
