@@ -14,7 +14,7 @@
     # (Branch Move) Rename current branch
     bm = branch --move
     # (Commit Ammend) Ammend last commit
-    ca = commit --ammend
+    ca = commit --amend
     # (Create Branch) Create a new branch and check it out
     cb = checkout -b
     # (Commit with Message) Commits staged files with commit message
