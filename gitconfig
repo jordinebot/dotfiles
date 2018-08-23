@@ -32,7 +32,7 @@
     # (REset) Undo last commit
     re = reset --hard HEAD
     # (Stash pUsh) Stash working directory changes with custom message
-    su = stash push -m
+    su = stash push --include-untracked -m
     # (Stash pOp) Apply and drop stash
     so = stash pop
     # (Stash List) List the stashed changes stack
