@@ -27,6 +27,8 @@
     la = !git config --list | grep ^alias\\. | cut -c 7- | grep -Ei --color \"$1\" "#"
     # (Log Graph) Show git log as graph
     lg = log --all --decorate --oneline --graph
+    lol = log --graph --decorate --pretty=oneline --abbrev-commit
+    lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
     # (Push Track) Push branch and set upstream track
     pt = git push --set-upstream origin
     # (REset) Undo last commit
