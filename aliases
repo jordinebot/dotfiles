@@ -32,6 +32,10 @@ alias cleanbak="find . -type f -name '*~' -maxdepth 1 -ls -delete"
 # git
 alias gf="cd /git"
 
+# Fuck
+alias f="fuck"
+alias fy="fuck --yeah"
+
 # Fast edit /etc/hosts
 alias eh="sudo nvim /etc/hosts"
 

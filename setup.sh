@@ -1,5 +1,9 @@
 #!/usr/bin/env zsh
 
+# Install Brew
+command -v brew >/dev/null 2>&1 || { echo >&2 "Installing Homebrew…"; \
+    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"; }
+
 # Install ZIM if it doesn't exist
 if [ ! -d ${ZDOTDIR:-${HOME}}/.zim ]
 then
