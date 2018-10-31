@@ -2,6 +2,8 @@
 # User configuration sourced by interactive shells
 #
 
+eval $(thefuck --alias)
+
 # Change default zim location
 export ZIM_HOME=${ZDOTDIR:-${HOME}}/.zim
 
