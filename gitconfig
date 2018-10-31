@@ -1,5 +1,5 @@
-# This is Git's per-user configuration file.
 [user]
+# This is Git's per-user configuration file.
 	name = Jordi Nebot
 	email = jordi@lovetoknow.com
 [core]
@@ -29,10 +29,14 @@
     lg = log --all --decorate --oneline --graph
     lol = log --graph --decorate --pretty=oneline --abbrev-commit
     lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+    # (Prune Origin) Remove all origin references in local repo for remotely deleted branches
+    po = git remote prune origin
     # (Push Track) Push branch and set upstream track
     pt = git push --set-upstream origin
     # (REset) Undo last commit
     re = reset --hard HEAD
+    # (Stash Apply) Apply a specific stash
+    sa = stash apply
     # (Stash pUsh) Stash working directory changes with custom message
     su = stash push --include-untracked -m
     # (Stash pOp) Apply and drop stash
