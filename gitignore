@@ -2,7 +2,6 @@
 .DS_Store
 
 # Vim files
-tags
 tags.lock
 tags.temp
 *~
