@@ -30,9 +30,9 @@
     lol = log --graph --decorate --pretty=oneline --abbrev-commit
     lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
     # (Prune Origin) Remove all origin references in local repo for remotely deleted branches
-    po = git remote prune origin
+    po = remote prune origin
     # (Push Track) Push branch and set upstream track
-    pt = git push --set-upstream origin
+    pt = push --set-upstream origin
     # (REset) Undo last commit
     re = reset --hard HEAD
     # (Stash Apply) Apply a specific stash
