@@ -1,9 +1,5 @@
 #!/usr/bin/env zsh
 
-# Install Brew
-command -v brew >/dev/null 2>&1 || { echo >&2 "Installing Homebrew…"; \
-    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"; }
-
 # Install ZIM if it doesn't exist
 if [ ! -d ${ZDOTDIR:-${HOME}}/.zim ]
 then
@@ -47,3 +43,7 @@ ln -fs ~/dotfiles/bash_profile ~/.bash_profile
 # Link global git files
 ln -fs ~/dotfiles/gitignore ~/.gitignore
 ln -fs ~/dotfiles/gitconfig ~/.gitconfig
+
+# Install neovim's setup
+rm -rf ~/.config/nvim/
+git clone https://github.com/jordinebot/nvim-setup.git ~/.config/nvim

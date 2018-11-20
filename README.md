@@ -1,4 +1,7 @@
 # New computer setup
+
+All automated steps are in `prepare.sh`:
+
 1. Install [**brew**](https://brew.sh/)
 1. Install **CLI utilities**
 
@@ -6,13 +9,13 @@
     brew install \
     git \
     node \
-    yarn \ 
+    yarn \
     the_silver_searcher \
     tmux \
     python@2 \
     thefuck
     ```
-    
+
 1. Install **neovim**
 
     ```
@@ -33,7 +36,15 @@
     firefox-nightly \
     firefox-developer-edition \
     slack
-    
+
+1. Create iTerm2 profiles
+
+    Send text at start:
+
+    ```
+    tmux attach -t main || tmux new -s main
+    ```
+
 1. Create `/git` folder
 
     ```
