@@ -25,6 +25,14 @@ then
 else
     echo 'Skipping Tmux Plugin Manager installation...'
 fi
+
+if [ ! -d ~/.tmux/plugins/tpm ]
+then
+    git clone https://github.com/jimeh/tmux-themepack.git ~/.tmux/plugins/tmux-themepack
+else
+    echo 'Skipping Tmux Plugin Manager installation...'
+fi
+
 ln -fs ~/dotfiles/tmux.conf ~/.tmux.conf
 
 # Install Powerline modified fonts
