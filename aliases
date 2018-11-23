@@ -40,16 +40,9 @@ alias fy="fuck --yeah"
 alias eh="sudo nvim /etc/hosts"
 
 # LOVETOKNOW ALIASES
-alias yd="cd /git/yourdictionary/"
-alias wf="cd /git/WordFinder/"
-alias ads="cd /git/global-ads-txt/"
+alias yd="cd /git/yourdictionary-1.0/"
+alias yc="cd /git/yourdictionary-components/"
+alias wf="cd /git/wordfinder/"
 
-alias clear_cache="find /git/yourdictionary/app/cache -name \"*.html\" -type f -delete"
-alias list_cache="find /git/yourdictionary/app/cache -name \"*.html\" -type f"
-
-alias ssh_dev="ssh -i ~/.ssh/YourDictionary.pem ec2-user@yd_dev"
-alias ssh_test="ssh -i ~/.ssh/YourDictionary.pem ec2-user@yd_test"
-alias ssh_prod1="ssh -i ~/.ssh/YourDictionary.pem ec2-user@yd_prod"
-alias ssh_prod2="ssh -i ~/.ssh/YourDictionary.pem ec2-user@yd_prod_b"
-alias ssh_prod3="ssh -i ~/.ssh/YourDictionary.pem ec2-user@yd_prod_c"
-alias ssh_wf="ssh -i ~/.ssh/YourDictionary.pem ec2-user@yd_wf"
+alias clear_cache="find /git/yourdictionary-1.0/app/cache -name \"*.html\" -type f -delete"
+alias list_cache="find /git/yourdictionary-1.0/app/cache -name \"*.html\" -type f"
