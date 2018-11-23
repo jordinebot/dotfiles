@@ -14,6 +14,7 @@ brew install \
      yarn \
      the_silver_searcher \
      tmux \
+     fzy \
      python@2 \
      thefuck
 
