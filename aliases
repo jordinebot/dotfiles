@@ -41,6 +41,7 @@ alias eh="sudo nvim /etc/hosts"
 
 # LOVETOKNOW ALIASES
 alias yd="cd /git/yourdictionary-1.0/"
+alias y2="cd /git/yourdictionary-2.x/"
 alias yc="cd /git/yourdictionary-components/"
 alias wf="cd /git/wordfinder/"
 
