@@ -40,9 +40,5 @@ alias fy="fuck --yeah"
 alias eh="sudo nvim /etc/hosts"
 
 # LOVETOKNOW ALIASES
-alias yd="cd /git/yourdictionary-1.0/"
-alias yc="cd /git/yourdictionary-components/"
+alias yd="cd /git/yourdictionary/"
 alias wf="cd /git/wordfinder/"
-
-alias clear_cache="find /git/yourdictionary-1.0/app/cache -name \"*.html\" -type f -delete"
-alias list_cache="find /git/yourdictionary-1.0/app/cache -name \"*.html\" -type f"
