@@ -1,5 +1,7 @@
 # New computer setup
 
+_Note: This dotfiles repository is **deprecated**. Check [@jordinebot/spark](https://github.com/jordinebot/spark) instead._
+
 All automated steps are in `prepare.sh`:
 
 1. Install [**brew**](https://brew.sh/)
