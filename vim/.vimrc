@@ -5,6 +5,9 @@ set re=0  " https://jameschambers.co.uk/vim-typescript-slow/
 " Show line numbers
 set number
 
+" Enable mouse support in all modes
+set mouse=a
+
 " Set encoding
 set encoding=utf-8
 
