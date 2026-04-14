@@ -8,13 +8,13 @@ https://iterm2.com/
 
 iTerm2 is a replacement for Terminal and the successor to iTerm. It works on Macs with macOS 12.4 or newer. iTerm2 brings the terminal into the modern age with features you never knew you always wanted.
 
+[Download](https://iterm2.com/downloads/stable/latest)
+
 #### tmux
 
 https://github.com/tmux/tmux/wiki
 
 tmux is a terminal multiplexer.
-
-[Download](https://iterm2.com/downloads/stable/latest)
 
 ```
 brew install tmux
