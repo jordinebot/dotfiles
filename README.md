@@ -11,3 +11,9 @@ Hammerspoon is a tool for powerful automation of macOS. At its core, Hammerspoon
 ```
 brew install hammerspoon --cask
 ```
+
+### Setup
+
+```
+ln -s ~/dotfiles/hammerspoon ~/.hammerspoon
+```
