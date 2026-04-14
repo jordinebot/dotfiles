@@ -62,4 +62,4 @@ ln -s ~/dotfiles/hammerspoon ~/.hammerspoon
 
 #### tmux
 
-There is no need to install [TPM](https://github.com/tmux-plugins/tpm) and the `tmux` manually because my `.tmux.conf` includes [Automatic TPM installation](https://github.com/tmux-plugins/tpm/blob/master/docs/automatic_tpm_installation.md).
+There is no need to install [TPM](https://github.com/tmux-plugins/tpm) and the `tmux` plugins manually because my `.tmux.conf` already includes [Automatic TPM installation](https://github.com/tmux-plugins/tpm/blob/master/docs/automatic_tpm_installation.md).
