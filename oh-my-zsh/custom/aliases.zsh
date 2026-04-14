@@ -7,6 +7,9 @@ alias ta="tmux attach -t"
 alias ts="tmux switch -t"
 alias tk="tmux kill-session -t"
 
+# Vim
+alias v="vim"
+
 # Git Composed Aliases
 alias g="git"
 alias pull="git fetch && git pull"
