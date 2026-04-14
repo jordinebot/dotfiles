@@ -1,7 +1,6 @@
 # Tmux
 alias t="tmux"
 alias tl="tmux list-sessions"
-alias tw="tmux attach -t work || tmux new -s work"
 alias tn="tmux new -s"
 alias ta="tmux attach -t"
 alias ts="tmux switch -t"
