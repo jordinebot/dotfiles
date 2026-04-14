@@ -1,14 +1,9 @@
 " Enable syntax highlighting
 syntax on
+set re=0  " https://jameschambers.co.uk/vim-typescript-slow/
 
 " Show line numbers
 set number
-
-" Show relative line numbers (optional but useful)
-" set relativenumber
-
-" Enable mouse support
-set mouse=a
 
 " Set encoding
 set encoding=utf-8
@@ -29,7 +24,6 @@ set incsearch        " Show matches as you type
 set cursorline       " Highlight current line
 set showcmd          " Show command in bottom bar
 set wildmenu         " Better command-line completion
-set scrolloff=8      " Keep 8 lines visible above/below cursor
 
 " Enable true color (if supported)
 set termguicolors
