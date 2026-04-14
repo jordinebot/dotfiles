@@ -78,6 +78,9 @@ To display the Powerline chars, install _Noto Mono for Powerline_ and select it 
 
 ```
 ln -s ~/dotfiles/zsh/.zshrc ~/.zshrc
+ln -s ~/dotfiles/tmux/.tmux.conf ~/.tmux.conf
+ln -s ~/dotfiles/git/.gitconfig ~/.gitconfig
+ln -s ~/dotfiles/git/.gitignore ~/.gitignore
 ln -s ~/dotfiles/hammerspoon ~/.hammerspoon
 ln -s ~/dotfiles/oh-my-zsh/custom/aliases.zsh ~/.oh-my-zsh/custom/aliases.zsh
 ```
