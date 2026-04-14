@@ -30,6 +30,26 @@ Noto is a collection of high-quality fonts with multiple weights and widths in s
 
 [Download](https://github.com/powerline/fonts/blob/master/NotoMono/Noto%20Mono%20for%20Powerline.ttf)
 
+#### fnm
+
+https://github.com/Schniz/fnm
+
+Fast and simple Node.js version manager, built in Rust
+
+```
+brew install fnm
+```
+
+#### Oh my zsh!
+
+https://github.com/ohmyzsh/ohmyzsh
+
+Oh My Zsh is an open source, community-driven framework for managing your `zsh` configuration.
+
+```
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+
 #### Hammerspoon
 
 https://www.hammerspoon.org/
@@ -57,6 +77,7 @@ To display the Powerline chars, install _Noto Mono for Powerline_ and select it 
 #### Symlinks
 
 ```
+ln -s ~/dotfiles/zsh/.zshrc ~/.zshrc
 ln -s ~/dotfiles/hammerspoon ~/.hammerspoon
 ```
 
