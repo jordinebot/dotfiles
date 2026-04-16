@@ -2,6 +2,7 @@
 -- Handles:
 -- 1. Auto-switch back to US after inactivity while using Spanish layout
 -- 2. Immediate switch to US when focusing certain apps (e.g. VS Code, Obsidian)
+-- 3. Immediate switch to Spanish when focusing certain Slack channels
 
 local M = {}
 
@@ -16,20 +17,37 @@ local forceUSApps = {
   ["Obsidian"] = true,
 }
 
+-- Slack channels that should switch to Spanish when focused (loaded from secrets.lua)
+local ok, secrets = pcall(require, "secrets")
+local spanishSlackChannels = ok and secrets.spanishSlackChannels or {}
+
 -- Internal state
 local idleTimer = nil    -- Timer that triggers layout switch
 local keyTap = nil       -- Event listener for key presses
 local appWatcher = nil   -- Watches for app focus changes
+local slackFilter = nil  -- Watches Slack window focus and title changes
 
 -- Check if current layout is Spanish
 local function isSpanishActive()
   return hs.keycodes.currentLayout() == spanishLayoutName
 end
 
+-- Check if current layout is US
+local function isUSActive()
+  return hs.keycodes.currentLayout() == usLayoutName
+end
+
 -- Switch to US layout (only if not already active)
 local function switchToUS()
-  if hs.keycodes.currentLayout() ~= usLayoutName then
+  if not isUSActive() then
     hs.keycodes.setLayout(usLayoutName)
+  end
+end
+
+-- Switch to Spanish layout (only if not already active)
+local function switchToSpanish()
+  if not isSpanishActive() then
+    hs.keycodes.setLayout(spanishLayoutName)
   end
 end
 
@@ -54,7 +72,7 @@ local function resetIdleTimer()
   end
 
   idleTimer = hs.timer.doAfter(idleSeconds, function()
-    -- When timer fires → stop tracking and switch layout
+    -- When timer fires -> stop tracking and switch layout
     stopIdleTracking()
     switchToUS()
   end)
@@ -135,6 +153,7 @@ local function isRealTypingEvent(event)
   return not ignoredKeyCodes[keyCode]
 end
 
+
 -- Start tracking typing inactivity while in Spanish layout
 local function startIdleTracking()
   -- Clean up any previous state first
@@ -145,7 +164,7 @@ local function startIdleTracking()
 
   -- Listen for key presses
   keyTap = hs.eventtap.new({ hs.eventtap.event.types.keyDown }, function(event)
-    -- If user already switched layout manually → stop everything
+    -- If user already switched layout manually -> stop everything
     if not isSpanishActive() then
       stopIdleTracking()
       return false
@@ -176,16 +195,40 @@ function M.init()
     end
   end)
 
-  -- Watch for app focus changes
+  -- Watch for app focus changes (force US in certain apps)
   appWatcher = hs.application.watcher.new(function(appName, eventType)
-    if eventType == hs.application.watcher.activated and forceUSApps[appName] then
-      -- When focusing certain apps → force US layout immediately
+    if eventType ~= hs.application.watcher.activated then
+      return
+    end
+
+    if forceUSApps[appName] then
       stopIdleTracking()
       switchToUS()
     end
   end)
 
   appWatcher:start()
+
+  -- Watch Slack window focus and title changes (covers app-switch + channel navigation)
+  slackFilter = hs.window.filter.new("Slack")
+  slackFilter:subscribe(
+    { hs.window.filter.windowFocused, hs.window.filter.windowTitleChanged },
+    function(win)
+      if not win then return end
+      local title = win:title()
+      if not title then return end
+
+      local channel = title:match("^(.-) %(Channel%)")
+      print("> Slack channel:", channel)
+
+      if channel and spanishSlackChannels[channel] then
+        switchToSpanish()
+      else
+        stopIdleTracking()
+        switchToUS()
+      end
+    end
+  )
 end
 
 return M
