@@ -214,7 +214,6 @@ function M.init()
       if not title then return end
 
       local channel = title:match("^(.-) %(Channel%)")
-      print("> Slack channel:", channel)
 
       if channel and spanishSlackChannels[channel] then
         switchToSpanish()
