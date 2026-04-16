@@ -11,14 +11,9 @@ local spanishLayoutName = "Spanish"   -- Change if needed (e.g. "Spanish - ISO")
 local usLayoutName = "U.S."           -- Or "ABC" depending on your setup
 local idleSeconds = 60                -- Time before auto-switch back
 
--- Apps that should always force US layout when focused
-local forceUSApps = {
-  ["Code"] = true,       -- VS Code
-  ["Obsidian"] = true,
-}
-
--- Slack channels that should switch to Spanish when focused (loaded from secrets.lua)
+-- Load secrets (forceUSApps, spanishSlackChannels) from secrets.lua
 local ok, secrets = pcall(require, "secrets")
+local forceUSApps = ok and secrets.forceUSApps or {}
 local spanishSlackChannels = ok and secrets.spanishSlackChannels or {}
 
 -- Internal state

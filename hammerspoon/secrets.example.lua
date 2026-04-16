@@ -1,7 +1,11 @@
 local M = {}
 
+-- Apps that should always force US layout when focused
+M.forceUSApps = {
+  -- ["Your App Name"] = true,
+}
+
 -- Slack channels that should switch to Spanish when focused
--- Copy this file to secrets.lua and fill in your channel names
 M.spanishSlackChannels = {
   -- ["your-channel-name"] = true,
 }
