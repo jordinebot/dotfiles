@@ -1,2 +1,2 @@
-local keyboardLayout = require("keyboard_layout")
+local keyboardLayout = require("keyboard_layout_simple")
 keyboardLayout.init()
