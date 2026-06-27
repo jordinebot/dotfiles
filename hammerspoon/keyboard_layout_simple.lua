@@ -1,10 +1,10 @@
 -- keyboard_layout_simple.lua
--- Switches back to US layout after 20 seconds without typing.
+-- Switches back to US layout after <idleSeconds> seconds without typing.
 
 local M = {}
 
 local usLayoutName = "U.S."
-local idleSeconds = 20
+local idleSeconds = 40
 
 local idleTimer = nil
 local keyTap = nil
