@@ -92,3 +92,8 @@ bindkey -v
 
 # Auto FNM use when changing folders
 eval "$(fnm env --use-on-cd --shell zsh)"
+# The following lines have been added by Docker Desktop to enable Docker CLI completions.
+fpath=(/Users/jordi.nebot/.docker/completions $fpath)
+autoload -Uz compinit
+compinit
+# End of Docker CLI completions
